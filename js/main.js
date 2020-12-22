@@ -4,7 +4,7 @@ let summary = [];
 
 
 async function getTotalAPI() {
-    const baseURL = `https://cors-anywhere.herokuapp.com/https://covidtracking.com/api/states`;
+    const baseURL = `https://covidtracking.com/api/states`;
     const res = await fetch(baseURL);
     data = await res.json();
 
@@ -12,7 +12,7 @@ async function getTotalAPI() {
     const infoRes = await fetch(infoApi);
     info = await infoRes.json();
 
-    const summaryApi = `http://covidtracking.com/api/us`;
+    const summaryApi = `https://covidtracking.com/api/us`;
     const summaryRes = await fetch(summaryApi);
     summary = await summaryRes.json();
 
