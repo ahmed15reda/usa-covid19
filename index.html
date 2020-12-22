@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>USA Covid 19</title>
+</head>
+
+<body>
+    <div class="container">
+        <div id="summary" class="text-center">
+            
+            
+        </div>
+        <div>
+            <input onkeyup="searchState(this.value)" placeholder="Search for State ..." class="form-control w-25 search" type="text" name="" id="">
+        </div>
+        <table class="table table-bordered m-auto">
+            <thead>
+                <th class="text-left">State</th>
+                <th>Total Cases</th>
+                <th>New Cases</th>
+                <th>Total Deaths</th>
+                <th>New Deaths</th>
+                <th>Total Recovered</th>
+                <th>Total Tests</th>
+                <th>Public Health</th>
+            </thead>
+            <tbody id="tableData">
+
+            </tbody>
+        </table>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
