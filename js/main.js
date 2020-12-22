@@ -3,8 +3,6 @@ let info = [];
 let summary = [];
 
 
-//https://cors-anywhere.herokuapp.com/
-
 async function getTotalAPI() {
     const baseURL = `https://covidtracking.com/api/states`;
     const res = await fetch(baseURL);
